@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style.css" />
+        <title>Form di Contatto</title>
+    </head>
+    <body>
+        <div class="contact-form">
+            <h2>Contattaci per parlare del tuo progetto</h2>
+            <form action="process_form.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Cognome:</label>
+                        <input
+                            type="text"
+                            id="surname"
+                            name="surname"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="subject">Oggetto:</label>
+                    <input type="text" id="subject" name="subject" required />
+                </div>
+                <div class="form-group">
+                    <label>Seleziona un'opzione:</label>
+                    <select class="dropdown" name="dropdown" required>
+                        <option value=""></option>
+                        <option value="opzione1">Mi serve un sito web</option>
+                        <option value="opzione2">
+                            Ho già un sito web a cui vorrei fare un make up
+                        </option>
+                        <option value="opzione2">
+                            Voglio parlare di altro
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Messaggio:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Invia</button>
+                </div>
+            </form>
+
+            <script
+                src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"
+            ></script>
+
+            <dotlottie-player
+                src="https://lottie.host/45a7b19a-3248-4b93-abb3-d91a4fb8a28c/01mHQAsKND.json"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+            ></dotlottie-player>
+        </div>
+    </body>
+</html>
