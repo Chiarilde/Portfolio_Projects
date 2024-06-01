@@ -872,16 +872,6 @@ html {
         position: absolute;
     }
 
-    .section-1-banner h1 {
-        position: relative;
-        left: -5rem;
-    }
-
-    .section-1-banner h1::first-letter {
-        visibility: hidden;
-        opacity: 0;
-    }
-
     .section-1-banner button:hover {
         clip-path: polygon(
             50% 0%,
