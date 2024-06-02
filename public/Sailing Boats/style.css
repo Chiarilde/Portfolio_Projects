@@ -233,6 +233,8 @@ section.change {
     opacity: 0.8;
     box-shadow: 0.3rem 0.3rem 0.5rem #111;
     transition: all 0.5s;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }
 
 .video:hover {
