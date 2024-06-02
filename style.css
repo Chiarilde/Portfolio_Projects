@@ -343,6 +343,11 @@ hr {
 .js-icon {
     color: #f0db4f !important; /* Colore JavaScript */
 }
+
+.ai-icon {
+    color: #000;
+}
+
 /* End of Section 3 */
 
 /* Contact page */
