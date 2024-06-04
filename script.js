@@ -30,3 +30,22 @@ btn.addEventListener("click", () => {
     search.classList.toggle("active");
     input.focus();
 });
+
+const boxes = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", checkBoxes);
+window.addEventListener("resize", checkBoxes); // Recalculate on resize
+checkBoxes();
+
+function checkBoxes() {
+    const trigger = window.innerHeight * 0.6; // 60% of viewport height
+
+    boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < trigger) {
+            box.classList.add("show");
+        } else {
+            box.classList.remove("show");
+        }
+    });
+}

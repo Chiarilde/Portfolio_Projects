@@ -227,6 +227,15 @@ h5.hovered {
     height: 40rem;
     width: 30rem;
     position: relative;
+    transform: translateX(600%);
+    transition: transform 0.7s ease;
+}
+
+.card:nth-of-type(even) {
+    transform: translateX(-600%);
+}
+.card.show {
+    transform: translateX(0);
 }
 
 .center {
