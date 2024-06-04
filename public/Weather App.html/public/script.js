@@ -33,15 +33,21 @@ document
                 const weatherIcon = document.createElement("img");
                 weatherIcon.setAttribute("alt", data.weather[0].main);
                 if (data.weather[0].main === "Clouds") {
-                    weatherIcon.setAttribute("src", "/public/images/Cloud.png");
+                    weatherIcon.setAttribute(
+                        "src",
+                        "../public/images/Cloud.png"
+                    );
                 } else if (data.weather[0].main === "Clear") {
-                    weatherIcon.setAttribute("src", "/public/images/sun.png");
+                    weatherIcon.setAttribute("src", "../public/images/sun.png");
                 } else if (data.weather[0].main === "Rain") {
-                    weatherIcon.setAttribute("src", "/public/images/rain.png");
+                    weatherIcon.setAttribute(
+                        "src",
+                        "../public/images/rain.png"
+                    );
                 } else {
                     weatherIcon.setAttribute(
                         "src",
-                        "/public/images/variable.png"
+                        "../public/images/variable.png"
                     );
                 }
                 temperatureItem.appendChild(temperatureHeading);
