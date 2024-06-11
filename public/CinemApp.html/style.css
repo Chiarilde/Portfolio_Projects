@@ -32,6 +32,7 @@ header a {
 }
 .search:focus {
     background-color: #031120;
+    outline: none;
 }
 
 main {

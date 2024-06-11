@@ -224,7 +224,7 @@ h5.hovered {
     width: fit-content;
 }
 .card {
-    height: 40rem;
+    height: 35rem;
     width: 30rem;
     position: relative;
     transform: translateX(600%);
