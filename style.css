@@ -339,6 +339,9 @@ hr {
     size: 2rem;
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .html5-icon {
