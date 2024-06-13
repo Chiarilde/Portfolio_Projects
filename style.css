@@ -21,6 +21,67 @@ body {
 }
 /* End of Common styles */
 
+.kinetic {
+    background-color: #000;
+    position: fixed; /* Cambia position a fixed */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10; /* Assicura che l'animazione sia sopra il resto del contenuto */
+}
+
+.kinetic::after,
+.kinetic::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #cbff00;
+
+    animation: rotateA 2s linear infinite 0.5s;
+}
+
+.kinetic::before {
+    transform: rotate(90deg);
+    animation: rotateB 2s linear infinite;
+}
+
+.display .kinetic {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+@keyframes rotateA {
+    0%,
+    25% {
+        transform: rotate(0deg);
+    }
+    50%,
+    75% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateB {
+    0%,
+    25% {
+        transform: rotate(90deg);
+    }
+    50%,
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(450deg);
+    }
+}
+
 /* Navbar styles */
 .navbar {
     background-color: #cbff00;

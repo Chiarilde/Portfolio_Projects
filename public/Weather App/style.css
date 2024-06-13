@@ -146,6 +146,7 @@ img {
 @media (max-width: 1000px) {
     input {
         margin-bottom: 15px;
+        max-width: 95%;
     }
     /* img {
         max-width: 25%;

@@ -86,3 +86,9 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 500px) {
+    input {
+        max-width: 95%;
+    }
+}
