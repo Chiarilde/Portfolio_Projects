@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(./images/3d-island-with-sea-landscape.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-position: center;
+    background-size: cover;
+    font-family: "Poetsen One";
+}
+
+header,
+footer {
+    flex: 0 0 auto;
+}
+
+main {
+    text-align: center;
+    padding: 5vmin;
+    flex: 1 0 auto;
+    margin-top: -50px;
+}
+h1 {
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    margin-top: 5rem;
+    text-shadow: 2px 2px 5px white;
+}
+
+p {
+    color: #000;
+    letter-spacing: 0.1rem;
+    text-shadow: 2px 2px 5px white;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    height: 1.5rem;
+    width: 17rem;
+    font-family: inherit;
+    border: 0.5px solid #000;
+}
+:focus {
+    border: none;
+}
+button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    margin: 8px;
+    border: 0.5px solid #000;
+    font-family: inherit;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.9;
+    border: none;
+}
+::placeholder {
+    color: darkgrey;
+    border: none;
+    font-family: inherit;
+}
+form {
+    padding-top: 60px;
+    border: none;
+}
+
+h2 {
+    color: #000;
+    padding-top: 5px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px white;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

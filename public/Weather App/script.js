@@ -3,12 +3,11 @@ document
     .addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const latitude = document.getElementById("lat").value;
-        const longitude = document.getElementById("lon").value;
+        const cityName = document.getElementById("city").value.trim();
 
         // Replace 'YOUR_API_KEY' with your actual OpenWeatherMap API key
         const apiKey = "c910185fdcf76476c4870196d821f66a";
-        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
         fetch(apiUrl)
             .then((response) => response.json())
@@ -54,6 +53,9 @@ document
                 weatherList.appendChild(windItem);
 
                 weatherResultDiv.appendChild(weatherList);
+
+                // Clear the city input after submission
+                document.getElementById("city").value = "";
             })
             .catch((error) => {
                 console.error("Error fetching the weather data:", error);
