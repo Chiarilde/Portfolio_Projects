@@ -8,7 +8,6 @@ body {
     background: url(./images/3d-island-with-sea-landscape.jpg);
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
     background-position: center;
     background-size: cover;
     font-family: "Poetsen One";
@@ -38,7 +37,17 @@ p {
     letter-spacing: 0.1rem;
     text-shadow: 2px 2px 5px white;
 }
+form {
+    padding-top: 60px;
+    border: none;
+}
 
+h2 {
+    color: #000;
+    padding-top: 5px;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px white;
+}
 input {
     border-radius: 10px;
     padding: 10px;
@@ -71,17 +80,7 @@ button:hover {
     border: none;
     font-family: inherit;
 }
-form {
-    padding-top: 60px;
-    border: none;
-}
 
-h2 {
-    color: #000;
-    padding-top: 5px;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px white;
-}
 footer {
     display: flex;
     justify-content: center;

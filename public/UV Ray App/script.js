@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (data && data.result && data.result.uv !== undefined) {
                         const uvValue = parseFloat(data.result.uv).toFixed(2); // Round to 2 decimal places
                         const uvTitle = document.createElement("h2");
-                        uvTitle.textContent = `Current UV: ${uvValue}`;
+                        uvTitle.textContent = `Current UV in ${cityName}: ${uvValue}`;
                         uvResultDiv.appendChild(uvTitle);
 
                         // Define the background image based on UV index ranges
