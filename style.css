@@ -23,13 +23,13 @@ body {
 
 .kinetic {
     background-color: #000;
-    position: fixed; /* Cambia position a fixed */
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
-    z-index: 10; /* Assicura che l'animazione sia sopra il resto del contenuto */
-    /* transform: translate(-100%, -100%); */
+    z-index: 10;
+    transition: opacity 2s ease-out, visibility 2s ease-out;
 }
 
 .kinetic::after,
@@ -53,7 +53,6 @@ body {
 .display .kinetic {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 1s ease-out, visibility 1s ease-out;
 }
 @keyframes rotateA {
     0%,

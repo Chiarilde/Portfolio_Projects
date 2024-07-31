@@ -3,7 +3,6 @@ window.onload = () => {
         document.querySelector("body").classList.add("display");
     }, 3000);
 };
-
 // Seleziona l'elemento h5
 const h5 = document.querySelector("h5");
 const phrases = ["Web Design", "UX/UI", "Web Development"];
