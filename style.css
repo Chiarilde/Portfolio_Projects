@@ -13,12 +13,8 @@ html {
     font-size: 62.5%;
     background-color: #e7e7e7;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
-body {
-    overflow-x: hidden;
-}
 /* End of Common styles */
 
 .kinetic {
@@ -165,6 +161,17 @@ a {
 .input:focus {
     outline: none;
     background-color: #ccff00;
+}
+.btn1 {
+    border-radius: 0.5rem;
+    background-color: #ccff00;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 0.7rem;
+    height: 40px;
+    width: 43px;
+    transition: transform 0.3s ease;
 }
 
 .search.active .input {
