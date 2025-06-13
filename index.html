@@ -602,16 +602,19 @@
         </div>
     </div>
 
-    <script>
-        if (!localStorage.getItem("privacyAccepted")) {
-            document.getElementById("cookie-banner").style.display = "block";
-        }
+<script>
+    if (!sessionStorage.getItem("privacyAccepted")) {
+        document.getElementById("cookie-banner").style.display = "block";
+        document.body.style.overflow = "hidden"; // ❌ Blocca lo scroll
+    }
 
-        document.getElementById("accept-cookie").addEventListener("click", function () {
-            localStorage.setItem("privacyAccepted", "true");
-            document.getElementById("cookie-banner").style.display = "none";
-        });
-    </script>
+    document.getElementById("accept-cookie").addEventListener("click", function () {
+        sessionStorage.setItem("privacyAccepted", "true");
+        document.getElementById("cookie-banner").style.display = "none";
+        document.body.style.overflow = ""; // ✅ Riattiva lo scroll
+    });
+</script>
+
 
     </body>
 </html>
