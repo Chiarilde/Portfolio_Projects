@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+}
 body {
     /* background-color: var(--primary-color); */
     margin: 0;
